@@ -14,18 +14,28 @@ const CABECALHOS_DESCARTADOS = new Set([
 ]);
 const CAMINHO_PERMITIDO = /^[A-Za-z0-9/_.-]*$/;
 
+/**
+ * Monta a URL de destino na API. Recusa (devolve null) qualquer caminho que
+ * pudesse escapar do domínio da API, como "//outro-site.com" ou "../".
+ */
+export function montarDestino(caminho, base, busca = '') {
+  if (!CAMINHO_PERMITIDO.test(caminho) || caminho.includes('..')) return null;
+  const origem = new URL(base);
+  const destino = new URL(`/${caminho.replace(/^\/+/, '')}`, origem);
+  if (destino.origin !== origem.origin) return null;
+  destino.search = busca;
+  return destino;
+}
+
 async function repassar(request) {
   const base = process.env.API_URL;
   if (!base) return Response.json({ erro: 'O site está sem a configuração da API.' }, { status: 500 });
 
   const url = new URL(request.url);
   const caminho = url.searchParams.get('caminho') ?? '';
-  if (!CAMINHO_PERMITIDO.test(caminho) || caminho.includes('..')) {
-    return Response.json({ erro: 'Rota não encontrada.' }, { status: 404 });
-  }
   url.searchParams.delete('caminho');
-  const destino = new URL(`/${caminho}`, base);
-  destino.search = url.searchParams.toString();
+  const destino = montarDestino(caminho, base, url.searchParams.toString());
+  if (!destino) return Response.json({ erro: 'Rota não encontrada.' }, { status: 404 });
 
   const cabecalhos = new Headers();
   for (const nome of CABECALHOS_DE_ENTRADA) {
