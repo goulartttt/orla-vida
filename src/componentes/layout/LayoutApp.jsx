@@ -66,7 +66,7 @@ export function LayoutApp() {
               <span className="font-semibold">{usuario?.nome}</span>
               {usuario?.demo && <span className="text-xs text-capa-suave">conta demo · apagada em 24 h</span>}
             </span>
-            <AlternarTema className="hover:bg-capa-funda!" />
+            <AlternarTema />
             <BotaoSair />
           </div>
         </div>

@@ -1,0 +1,561 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-01T12:00:00.000Z",
+  "title": "Design System: Orla Vida",
+  "extensions": {
+    "colorMeta": {
+      "fundo": {
+        "role": "neutral",
+        "displayName": "Areia",
+        "canonical": "oklch(0.955 0.019 86)",
+        "darkCanonical": "oklch(0.2 0.026 198)",
+        "tonalRamp": [
+          "oklch(0.15 0.019 86)",
+          "oklch(0.27 0.019 86)",
+          "oklch(0.39 0.019 86)",
+          "oklch(0.51 0.019 86)",
+          "oklch(0.63 0.019 86)",
+          "oklch(0.75 0.019 86)",
+          "oklch(0.87 0.019 86)",
+          "oklch(0.95 0.019 86)"
+        ]
+      },
+      "folha": {
+        "role": "neutral",
+        "displayName": "Papel",
+        "canonical": "oklch(0.988 0.009 90)",
+        "darkCanonical": "oklch(0.245 0.03 196)",
+        "tonalRamp": [
+          "oklch(0.15 0.009 90)",
+          "oklch(0.27 0.009 90)",
+          "oklch(0.39 0.009 90)",
+          "oklch(0.51 0.009 90)",
+          "oklch(0.63 0.009 90)",
+          "oklch(0.75 0.009 90)",
+          "oklch(0.87 0.009 90)",
+          "oklch(0.95 0.009 90)"
+        ]
+      },
+      "folha-funda": {
+        "role": "neutral",
+        "displayName": "Papel Envelhecido",
+        "canonical": "oklch(0.935 0.02 88)",
+        "darkCanonical": "oklch(0.225 0.028 197)",
+        "tonalRamp": [
+          "oklch(0.15 0.02 88)",
+          "oklch(0.27 0.02 88)",
+          "oklch(0.39 0.02 88)",
+          "oklch(0.51 0.02 88)",
+          "oklch(0.63 0.02 88)",
+          "oklch(0.75 0.02 88)",
+          "oklch(0.87 0.02 88)",
+          "oklch(0.95 0.02 88)"
+        ]
+      },
+      "tinta": {
+        "role": "neutral",
+        "displayName": "Tinta Petróleo",
+        "canonical": "oklch(0.27 0.045 228)",
+        "darkCanonical": "oklch(0.94 0.018 90)",
+        "tonalRamp": [
+          "oklch(0.15 0.045 228)",
+          "oklch(0.27 0.045 228)",
+          "oklch(0.39 0.045 228)",
+          "oklch(0.51 0.045 228)",
+          "oklch(0.63 0.045 228)",
+          "oklch(0.75 0.045 228)",
+          "oklch(0.87 0.045 228)",
+          "oklch(0.95 0.045 228)"
+        ]
+      },
+      "tinta-suave": {
+        "role": "neutral",
+        "displayName": "Tinta Suave",
+        "canonical": "oklch(0.44 0.04 222)",
+        "darkCanonical": "oklch(0.78 0.025 205)",
+        "tonalRamp": [
+          "oklch(0.15 0.04 222)",
+          "oklch(0.27 0.04 222)",
+          "oklch(0.39 0.04 222)",
+          "oklch(0.51 0.04 222)",
+          "oklch(0.63 0.04 222)",
+          "oklch(0.75 0.04 222)",
+          "oklch(0.87 0.04 222)",
+          "oklch(0.95 0.04 222)"
+        ]
+      },
+      "fio": {
+        "role": "neutral",
+        "displayName": "Fio",
+        "canonical": "oklch(0.83 0.025 205)",
+        "darkCanonical": "oklch(0.36 0.03 215)",
+        "tonalRamp": [
+          "oklch(0.15 0.025 205)",
+          "oklch(0.27 0.025 205)",
+          "oklch(0.39 0.025 205)",
+          "oklch(0.51 0.025 205)",
+          "oklch(0.63 0.025 205)",
+          "oklch(0.75 0.025 205)",
+          "oklch(0.87 0.025 205)",
+          "oklch(0.95 0.025 205)"
+        ]
+      },
+      "fio-forte": {
+        "role": "neutral",
+        "displayName": "Fio Forte",
+        "canonical": "oklch(0.62 0.03 215)",
+        "darkCanonical": "oklch(0.52 0.035 210)",
+        "tonalRamp": [
+          "oklch(0.15 0.03 215)",
+          "oklch(0.27 0.03 215)",
+          "oklch(0.39 0.03 215)",
+          "oklch(0.51 0.03 215)",
+          "oklch(0.63 0.03 215)",
+          "oklch(0.75 0.03 215)",
+          "oklch(0.87 0.03 215)",
+          "oklch(0.95 0.03 215)"
+        ]
+      },
+      "capa": {
+        "role": "primary",
+        "displayName": "Verde-Mar da Capa",
+        "canonical": "oklch(0.4 0.072 176)",
+        "darkCanonical": "oklch(0.31 0.052 180)",
+        "tonalRamp": [
+          "oklch(0.15 0.072 176)",
+          "oklch(0.27 0.072 176)",
+          "oklch(0.39 0.072 176)",
+          "oklch(0.51 0.072 176)",
+          "oklch(0.63 0.072 176)",
+          "oklch(0.75 0.072 176)",
+          "oklch(0.87 0.072 176)",
+          "oklch(0.95 0.072 176)"
+        ]
+      },
+      "capa-funda": {
+        "role": "primary",
+        "displayName": "Capa Funda",
+        "canonical": "oklch(0.33 0.06 182)",
+        "darkCanonical": "oklch(0.26 0.042 185)",
+        "tonalRamp": [
+          "oklch(0.15 0.06 182)",
+          "oklch(0.27 0.06 182)",
+          "oklch(0.39 0.06 182)",
+          "oklch(0.51 0.06 182)",
+          "oklch(0.63 0.06 182)",
+          "oklch(0.75 0.06 182)",
+          "oklch(0.87 0.06 182)",
+          "oklch(0.95 0.06 182)"
+        ]
+      },
+      "capa-tinta": {
+        "role": "primary",
+        "displayName": "Tinta da Capa",
+        "canonical": "oklch(0.965 0.02 92)",
+        "darkCanonical": "oklch(0.96 0.02 92)",
+        "tonalRamp": [
+          "oklch(0.15 0.02 92)",
+          "oklch(0.27 0.02 92)",
+          "oklch(0.39 0.02 92)",
+          "oklch(0.51 0.02 92)",
+          "oklch(0.63 0.02 92)",
+          "oklch(0.75 0.02 92)",
+          "oklch(0.87 0.02 92)",
+          "oklch(0.95 0.02 92)"
+        ]
+      },
+      "capa-suave": {
+        "role": "primary",
+        "displayName": "Capa Suave",
+        "canonical": "oklch(0.87 0.035 150)",
+        "darkCanonical": "oklch(0.84 0.04 150)",
+        "tonalRamp": [
+          "oklch(0.15 0.035 150)",
+          "oklch(0.27 0.035 150)",
+          "oklch(0.39 0.035 150)",
+          "oklch(0.51 0.035 150)",
+          "oklch(0.63 0.035 150)",
+          "oklch(0.75 0.035 150)",
+          "oklch(0.87 0.035 150)",
+          "oklch(0.95 0.035 150)"
+        ]
+      },
+      "capa-fio": {
+        "role": "primary",
+        "displayName": "Fio da Capa",
+        "canonical": "oklch(0.55 0.06 172)",
+        "darkCanonical": "oklch(0.45 0.05 175)",
+        "tonalRamp": [
+          "oklch(0.15 0.06 172)",
+          "oklch(0.27 0.06 172)",
+          "oklch(0.39 0.06 172)",
+          "oklch(0.51 0.06 172)",
+          "oklch(0.63 0.06 172)",
+          "oklch(0.75 0.06 172)",
+          "oklch(0.87 0.06 172)",
+          "oklch(0.95 0.06 172)"
+        ]
+      },
+      "mar": {
+        "role": "primary",
+        "displayName": "Verde-Mar de Ação",
+        "canonical": "oklch(0.42 0.08 174)",
+        "darkCanonical": "oklch(0.79 0.1 172)",
+        "tonalRamp": [
+          "oklch(0.15 0.08 174)",
+          "oklch(0.27 0.08 174)",
+          "oklch(0.39 0.08 174)",
+          "oklch(0.51 0.08 174)",
+          "oklch(0.63 0.08 174)",
+          "oklch(0.75 0.08 174)",
+          "oklch(0.87 0.08 174)",
+          "oklch(0.95 0.08 174)"
+        ]
+      },
+      "mar-forte": {
+        "role": "primary",
+        "displayName": "Verde-Mar Forte",
+        "canonical": "oklch(0.35 0.07 178)",
+        "darkCanonical": "oklch(0.85 0.09 170)",
+        "tonalRamp": [
+          "oklch(0.15 0.07 178)",
+          "oklch(0.27 0.07 178)",
+          "oklch(0.39 0.07 178)",
+          "oklch(0.51 0.07 178)",
+          "oklch(0.63 0.07 178)",
+          "oklch(0.75 0.07 178)",
+          "oklch(0.87 0.07 178)",
+          "oklch(0.95 0.07 178)"
+        ]
+      },
+      "petroleo": {
+        "role": "tertiary",
+        "displayName": "Petróleo",
+        "canonical": "oklch(0.38 0.06 228)",
+        "darkCanonical": "oklch(0.8 0.06 222)",
+        "tonalRamp": [
+          "oklch(0.15 0.06 228)",
+          "oklch(0.27 0.06 228)",
+          "oklch(0.39 0.06 228)",
+          "oklch(0.51 0.06 228)",
+          "oklch(0.63 0.06 228)",
+          "oklch(0.75 0.06 228)",
+          "oklch(0.87 0.06 228)",
+          "oklch(0.95 0.06 228)"
+        ]
+      },
+      "sol": {
+        "role": "secondary",
+        "displayName": "Amarelo-Sol",
+        "canonical": "oklch(0.86 0.15 92)",
+        "darkCanonical": "oklch(0.86 0.15 92)",
+        "tonalRamp": [
+          "oklch(0.15 0.15 92)",
+          "oklch(0.27 0.15 92)",
+          "oklch(0.39 0.15 92)",
+          "oklch(0.51 0.15 92)",
+          "oklch(0.63 0.15 92)",
+          "oklch(0.75 0.15 92)",
+          "oklch(0.87 0.15 92)",
+          "oklch(0.95 0.15 92)"
+        ]
+      },
+      "sol-forte": {
+        "role": "secondary",
+        "displayName": "Sol Forte",
+        "canonical": "oklch(0.8 0.16 88)",
+        "darkCanonical": "oklch(0.9 0.14 95)",
+        "tonalRamp": [
+          "oklch(0.15 0.16 88)",
+          "oklch(0.27 0.16 88)",
+          "oklch(0.39 0.16 88)",
+          "oklch(0.51 0.16 88)",
+          "oklch(0.63 0.16 88)",
+          "oklch(0.75 0.16 88)",
+          "oklch(0.87 0.16 88)",
+          "oklch(0.95 0.16 88)"
+        ]
+      },
+      "sol-tinta": {
+        "role": "secondary",
+        "displayName": "Tinta sobre Sol",
+        "canonical": "oklch(0.25 0.045 228)",
+        "darkCanonical": "oklch(0.22 0.04 228)",
+        "tonalRamp": [
+          "oklch(0.15 0.045 228)",
+          "oklch(0.27 0.045 228)",
+          "oklch(0.39 0.045 228)",
+          "oklch(0.51 0.045 228)",
+          "oklch(0.63 0.045 228)",
+          "oklch(0.75 0.045 228)",
+          "oklch(0.87 0.045 228)",
+          "oklch(0.95 0.045 228)"
+        ]
+      },
+      "ameixa": {
+        "role": "tertiary",
+        "displayName": "Ameixa",
+        "canonical": "oklch(0.46 0.15 345)",
+        "darkCanonical": "oklch(0.8 0.11 345)",
+        "tonalRamp": [
+          "oklch(0.15 0.15 345)",
+          "oklch(0.27 0.15 345)",
+          "oklch(0.39 0.15 345)",
+          "oklch(0.51 0.15 345)",
+          "oklch(0.63 0.15 345)",
+          "oklch(0.75 0.15 345)",
+          "oklch(0.87 0.15 345)",
+          "oklch(0.95 0.15 345)"
+        ]
+      },
+      "marca": {
+        "role": "secondary",
+        "displayName": "Marca-Texto",
+        "canonical": "oklch(0.91 0.13 96)",
+        "darkCanonical": "oklch(0.86 0.14 94 / 0.32)",
+        "tonalRamp": [
+          "oklch(0.15 0.13 96)",
+          "oklch(0.27 0.13 96)",
+          "oklch(0.39 0.13 96)",
+          "oklch(0.51 0.13 96)",
+          "oklch(0.63 0.13 96)",
+          "oklch(0.75 0.13 96)",
+          "oklch(0.87 0.13 96)",
+          "oklch(0.95 0.13 96)"
+        ]
+      }
+    },
+    "themes": {
+      "claro": ":root",
+      "escuro": "[data-tema='escuro'] (darkCanonical em cada cor)",
+      "impressao": "@media print: A4, margem 14mm, tinta #11202a sobre #fff, sem sombras, .nao-imprimir oculto"
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Título do hero na capa. Utilidade condensado (font-stretch 66%, word-spacing 0.12em)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Títulos de seção da Home."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Título de página na área logada."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Valores protagonistas: capital, prêmio anual, total por ano. Tabular."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texto corrido com algarismos tabulares; 52 a 60ch."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Botões e navegação. Utilidade estreito (font-stretch 78%)."
+      },
+      "label": {
+        "displayName": "Rótulo",
+        "purpose": "Rótulo de campo, cabeçalho de tabela, tipo de documento. Maiúsculas, tinta-suave."
+      },
+      "stamp": {
+        "displayName": "Carimbo",
+        "purpose": "Exclusivo do carimbo de status. font-stretch 70%, maiúsculas."
+      }
+    },
+    "shadows": [
+      {
+        "name": "sombra-folha",
+        "value": "0 1px 0 oklch(0.27 0.045 228 / 0.06), 0 18px 34px -22px oklch(0.27 0.045 228 / 0.45)",
+        "darkValue": "0 1px 0 oklch(0 0 0 / 0.3), 0 20px 40px -24px oklch(0 0 0 / 0.8)",
+        "purpose": "Toda folha de documento: papel apoiado na mesa."
+      },
+      {
+        "name": "relevo-sol",
+        "value": "0 1px 0 oklch(0.25 0.045 228 / 0.3), 0 10px 20px -12px oklch(0.25 0.045 228 / 0.6)",
+        "purpose": "Só o botão primário amarelo-sol."
+      },
+      {
+        "name": "polegar-regua",
+        "value": "0 0 0 2px var(--mar), 0 6px 14px -6px oklch(0.25 0.045 228 / 0.7)",
+        "purpose": "O sol da régua de capital."
+      },
+      {
+        "name": "anel-foco",
+        "value": "outline: 3px solid var(--anel); outline-offset: 2px",
+        "purpose": "Foco visível global. --anel = mar-forte (claro), sol (escuro e sobre a capa)."
+      },
+      {
+        "name": "foco-entrada",
+        "value": "0 0 0 3px color-mix(in oklch, var(--mar) 25%, transparent)",
+        "purpose": "Halo de foco das entradas, com borda mar."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-saida",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Easing único de transições e animações."
+      },
+      {
+        "name": "transicao-controle",
+        "value": "150-160ms ease-saida",
+        "purpose": "Hover de botões, linha de base das entradas, escala do polegar."
+      },
+      {
+        "name": "bater",
+        "value": "520ms ease-saida; scale(1.5) rotate(6deg) -> scale(0.96) -> scale(1)",
+        "purpose": "Carimbo ao mudar de status. Só em prefers-reduced-motion: no-preference."
+      },
+      {
+        "name": "surgir",
+        "value": "600ms ease-saida; translateY(10px) e opacidade 0 -> repouso",
+        "purpose": "Entrada do hero (Apólice Viva com atraso de 120ms). Só em no-preference."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão Sol",
+      "kind": "button",
+      "refersTo": "button-sol",
+      "description": "Primário de conversão (Entrar com conta demo). Um por região de decisão.",
+      "html": "<button class=\"ds-btn ds-btn-sol\">Entrar com conta demo</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 20px;border-radius:4px;border:0;font-family:'Archivo Variable',ui-sans-serif,system-ui,sans-serif;font-stretch:78%;font-weight:600;font-size:0.95rem;letter-spacing:0.015em;cursor:pointer;transition:background-color 150ms cubic-bezier(0.16,1,0.3,1),translate 150ms cubic-bezier(0.16,1,0.3,1)}.ds-btn:active{translate:0 1px}.ds-btn:focus-visible{outline:3px solid var(--anel,oklch(0.35 0.07 178));outline-offset:2px}.ds-btn-sol{background:var(--sol,oklch(0.86 0.15 92));color:var(--sol-tinta,oklch(0.25 0.045 228));box-shadow:0 1px 0 oklch(0.25 0.045 228 / 0.3),0 10px 20px -12px oklch(0.25 0.045 228 / 0.6)}.ds-btn-sol:hover{background:var(--sol-forte,oklch(0.8 0.16 88))}"
+    },
+    {
+      "name": "Botão Mar",
+      "kind": "button",
+      "refersTo": "button-mar",
+      "description": "Ação padrão dentro do app.",
+      "html": "<button class=\"ds-btn ds-btn-mar\">Nova cotação</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 20px;border-radius:4px;border:0;font-family:'Archivo Variable',ui-sans-serif,system-ui,sans-serif;font-stretch:78%;font-weight:600;font-size:0.95rem;letter-spacing:0.015em;cursor:pointer;transition:background-color 150ms cubic-bezier(0.16,1,0.3,1),translate 150ms cubic-bezier(0.16,1,0.3,1)}.ds-btn:active{translate:0 1px}.ds-btn:focus-visible{outline:3px solid var(--anel,oklch(0.35 0.07 178));outline-offset:2px}.ds-btn-mar{background:var(--mar,oklch(0.42 0.08 174));color:var(--folha,oklch(0.988 0.009 90))}.ds-btn-mar:hover{background:var(--mar-forte,oklch(0.35 0.07 178))}"
+    },
+    {
+      "name": "Botão Contorno",
+      "kind": "button",
+      "refersTo": "button-contorno",
+      "description": "Ação secundária sobre papel (Imprimir, Tentar de novo).",
+      "html": "<button class=\"ds-btn ds-btn-contorno\">Imprimir</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 20px;border-radius:4px;border:0;font-family:'Archivo Variable',ui-sans-serif,system-ui,sans-serif;font-stretch:78%;font-weight:600;font-size:0.95rem;letter-spacing:0.015em;cursor:pointer;transition:background-color 150ms cubic-bezier(0.16,1,0.3,1),translate 150ms cubic-bezier(0.16,1,0.3,1)}.ds-btn:active{translate:0 1px}.ds-btn:focus-visible{outline:3px solid var(--anel,oklch(0.35 0.07 178));outline-offset:2px}.ds-btn-contorno{background:var(--folha,oklch(0.988 0.009 90));color:var(--tinta,oklch(0.27 0.045 228));border:1px solid var(--fio-forte,oklch(0.62 0.03 215))}.ds-btn-contorno:hover{background:var(--folha-funda,oklch(0.935 0.02 88))}"
+    },
+    {
+      "name": "Entrada",
+      "kind": "input",
+      "refersTo": "entrada",
+      "description": "Campo rotulado de formulário com linha de base de caneta.",
+      "html": "<label class=\"ds-campo\"><span class=\"ds-rotulo\">Nome completo</span><input class=\"ds-entrada\" placeholder=\"Como no documento\"></label>",
+      "css": ".ds-campo{display:flex;flex-direction:column;gap:6px;font-family:'Archivo Variable',ui-sans-serif,system-ui,sans-serif;}.ds-rotulo{font-stretch:78%;font-size:0.72rem;font-weight:650;letter-spacing:0.09em;text-transform:uppercase;color:var(--tinta-suave,oklch(0.44 0.04 222))}.ds-entrada{width:100%;min-height:2.875rem;padding:0.625rem 0.75rem;font:inherit;background:var(--folha,oklch(0.988 0.009 90));color:var(--tinta,oklch(0.27 0.045 228));border:1px solid var(--fio,oklch(0.83 0.025 205));border-bottom:2px solid var(--fio-forte,oklch(0.62 0.03 215));border-radius:4px 4px 2px 2px;caret-color:var(--mar,oklch(0.42 0.08 174));transition:border-color 160ms cubic-bezier(0.16,1,0.3,1)}.ds-entrada:hover{border-bottom-color:var(--tinta-suave,oklch(0.44 0.04 222))}.ds-entrada:focus-visible{outline:none;border-color:var(--mar,oklch(0.42 0.08 174));box-shadow:0 0 0 3px color-mix(in oklch,var(--mar,oklch(0.42 0.08 174)) 25%,transparent)}.ds-entrada[aria-invalid=true]{border-bottom-color:var(--ameixa,oklch(0.46 0.15 345))}"
+    },
+    {
+      "name": "Folha com Picote e Canhotos",
+      "kind": "card",
+      "refersTo": "folha",
+      "description": "O recipiente de documento: cabeçalho de formulário, valor marcado, picote e carnê.",
+      "html": "<section class=\"ds-folha\"><header class=\"ds-folha-cab\"><span class=\"ds-simbolo\"><svg viewBox=\"0 0 32 32\" width=\"24\" height=\"24\" aria-hidden=\"true\"><circle cx=\"16\" cy=\"11.6\" r=\"4.6\" fill=\"oklch(0.86 0.15 92)\"/><path d=\"M5 15.4c2.4 0 3.4 2.9 4.9 5.4 1.7 2.8 3.6 4.2 6.1 4.2s4.4-1.4 6.1-4.2c1.5-2.5 2.5-5.4 4.9-5.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\"/></svg></span><span class=\"ds-rotulo ds-forte\">Simulação</span><span class=\"ds-rotulo\">Documento fictício</span></header><div class=\"ds-folha-corpo\"><span class=\"ds-rotulo\">Prêmio anual</span><p class=\"ds-valor\"><span class=\"ds-marcado\">R$ 1.800,00</span></p></div><div class=\"ds-picote\"></div><ol class=\"ds-canhotos\"><li><span class=\"ds-rotulo\">Parcela 01/12</span><b>R$ 150,00</b><small>01/10/26</small></li><li><span class=\"ds-rotulo\">Parcela 02/12</span><b>R$ 150,00</b><small>01/11/26</small></li><li><span class=\"ds-rotulo\">Parcela 03/12</span><b>R$ 150,00</b><small>01/12/26</small></li></ol></section>",
+      "css": ".ds-folha{font-family:'Archivo Variable',ui-sans-serif,system-ui,sans-serif;font-variant-numeric:tabular-nums;background:var(--folha,oklch(0.988 0.009 90));color:var(--tinta,oklch(0.27 0.045 228));border:1px solid var(--fio,oklch(0.83 0.025 205));border-radius:6px;box-shadow:0 1px 0 oklch(0.27 0.045 228 / 0.06),0 18px 34px -22px oklch(0.27 0.045 228 / 0.45);max-width:26rem}.ds-folha-cab{display:flex;align-items:center;gap:12px;padding:12px 20px;border-bottom:1px solid var(--fio,oklch(0.83 0.025 205))}.ds-simbolo{display:inline-flex;color:var(--mar,oklch(0.42 0.08 174))}.ds-folha-corpo{padding:20px}.ds-rotulo{font-stretch:78%;font-size:0.72rem;font-weight:650;letter-spacing:0.09em;text-transform:uppercase;color:var(--tinta-suave,oklch(0.44 0.04 222))}.ds-forte{color:var(--tinta,oklch(0.27 0.045 228))}.ds-valor{margin:4px 0 0;font-stretch:66%;font-weight:800;font-size:2.25rem;line-height:1}.ds-marcado{background:linear-gradient(transparent 12%,var(--marca,oklch(0.91 0.13 96)) 12%,var(--marca,oklch(0.91 0.13 96)) 92%,transparent 92%);border-radius:2px}.ds-picote{height:14px;background:radial-gradient(circle at 7px 7px,var(--furo,oklch(0.955 0.019 86)) 3.5px,transparent 4px) 0 0/14px 14px repeat-x,linear-gradient(to right,var(--fio-forte,oklch(0.62 0.03 215)) 50%,transparent 0) 0 50%/10px 1px repeat-x}.ds-canhotos{display:grid;grid-template-columns:repeat(3,1fr);margin:8px 20px 20px;padding:0;list-style:none;overflow:hidden;border:1px solid var(--fio,oklch(0.83 0.025 205));border-radius:4px;background:var(--folha-funda,oklch(0.935 0.02 88))}.ds-canhotos li{display:flex;flex-direction:column;gap:4px;padding:10px;border-right:1px dashed var(--fio-forte,oklch(0.62 0.03 215))}.ds-canhotos li:last-child{border-right:0}.ds-canhotos b{font-size:1.05rem}.ds-canhotos small{font-size:0.75rem;color:var(--tinta-suave,oklch(0.44 0.04 222))}"
+    },
+    {
+      "name": "Carimbo",
+      "kind": "chip",
+      "refersTo": "carimbo-sol",
+      "description": "Status de documento como carimbo de borracha, em tons sol, sol-claro e apagado, cada um com inclinação própria.",
+      "html": "<div class=\"ds-carimbos\"><span class=\"ds-carimbo ds-c-sol\" style=\"--inclinacao:-2deg\">Vigente</span><span class=\"ds-carimbo ds-c-claro\" style=\"--inclinacao:1deg\">Em aberto</span><span class=\"ds-carimbo ds-c-apagado\" style=\"--inclinacao:-4deg\">Encerrada</span></div>",
+      "css": ".ds-carimbos{display:flex;gap:16px;padding:12px}.ds-carimbo{display:inline-flex;align-items:center;gap:0.35em;padding:0.2em 0.6em 0.15em;border:2px solid currentColor;outline:1px solid currentColor;outline-offset:2px;border-radius:4px;font-family:'Archivo Variable',ui-sans-serif,system-ui,sans-serif;font-stretch:70%;font-weight:800;font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;line-height:1.2;rotate:var(--inclinacao,-2deg)}.ds-c-sol{background:var(--sol,oklch(0.86 0.15 92));color:var(--sol-tinta,oklch(0.25 0.045 228))}.ds-c-claro{background:color-mix(in oklch,var(--sol,oklch(0.86 0.15 92)) 30%,transparent);color:var(--tinta,oklch(0.27 0.045 228))}.ds-c-apagado{color:var(--tinta-suave,oklch(0.44 0.04 222))}"
+    },
+    {
+      "name": "Régua de Capital",
+      "kind": "input",
+      "refersTo": "regua",
+      "description": "Slider com o sol correndo sobre trilho que se preenche de verde-mar.",
+      "html": "<input type=\"range\" class=\"ds-regua\" min=\"0\" max=\"100\" value=\"50\" style=\"--preenchido:50%\" aria-label=\"Capital\">",
+      "css": ".ds-regua{width:100%;height:2.75rem;background:transparent;appearance:none;-webkit-appearance:none;cursor:pointer}.ds-regua::-webkit-slider-runnable-track{height:8px;border-radius:999px;background:linear-gradient(to right,var(--mar,oklch(0.42 0.08 174)) var(--preenchido),var(--fio,oklch(0.83 0.025 205)) var(--preenchido))}.ds-regua::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;margin-top:-11px;border-radius:50%;background:var(--sol,oklch(0.86 0.15 92));border:3px solid var(--folha,oklch(0.988 0.009 90));box-shadow:0 0 0 2px var(--mar,oklch(0.42 0.08 174)),0 6px 14px -6px oklch(0.25 0.045 228 / 0.7);transition:scale 150ms cubic-bezier(0.16,1,0.3,1)}.ds-regua:active::-webkit-slider-thumb{scale:1.12}.ds-regua:focus-visible{outline:none}.ds-regua:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 2px var(--mar,oklch(0.42 0.08 174)),0 0 0 6px var(--anel,oklch(0.35 0.07 178))}.ds-regua::-moz-range-track{height:8px;border-radius:999px;background:var(--fio,oklch(0.83 0.025 205))}.ds-regua::-moz-range-progress{height:8px;border-radius:999px;background:var(--mar,oklch(0.42 0.08 174))}.ds-regua::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:var(--sol,oklch(0.86 0.15 92));border:3px solid var(--folha,oklch(0.988 0.009 90));box-shadow:0 0 0 2px var(--mar,oklch(0.42 0.08 174))}"
+    },
+    {
+      "name": "Navegação na Capa",
+      "kind": "nav",
+      "refersTo": "nav-capa-ativo",
+      "description": "Cabeçalho verde-mar com itens estreitos; ativo em papel invertido; foco vira sol.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-logo\"><svg viewBox=\"0 0 32 32\" width=\"32\" height=\"32\" aria-hidden=\"true\"><circle cx=\"16\" cy=\"11.6\" r=\"4.6\" fill=\"oklch(0.86 0.15 92)\"/><path d=\"M5 15.4c2.4 0 3.4 2.9 4.9 5.4 1.7 2.8 3.6 4.2 6.1 4.2s4.4-1.4 6.1-4.2c1.5-2.5 2.5-5.4 4.9-5.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\"/></svg><span>Orla<span class=\"ds-leve\"> Vida</span></span></span><a href=\"#\" class=\"ds-nav-item\">Painel</a><a href=\"#\" class=\"ds-nav-item\">Cotações</a><a href=\"#\" class=\"ds-nav-item ds-ativo\" aria-current=\"page\">Apólices</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:4px;padding:12px 32px;background:var(--capa,oklch(0.4 0.072 176));color:var(--capa-tinta,oklch(0.965 0.02 92));font-family:'Archivo Variable',ui-sans-serif,system-ui,sans-serif;}.ds-logo{display:inline-flex;align-items:center;gap:8px;font-stretch:66%;word-spacing:0.12em;font-weight:800;font-size:1.45rem;line-height:1;margin-right:16px}.ds-leve{font-weight:500}.ds-nav-item{color:inherit;text-decoration:none;font-stretch:78%;font-weight:600;padding:8px 14px;border-radius:4px;transition:background-color 150ms}.ds-nav-item:hover{background:var(--capa-funda,oklch(0.33 0.06 182))}.ds-nav-item:focus-visible{outline:3px solid var(--sol,oklch(0.86 0.15 92));outline-offset:2px}.ds-ativo,.ds-ativo:hover{background:var(--capa-tinta,oklch(0.965 0.02 92));color:var(--capa,oklch(0.4 0.072 176))}"
+    }
+  ],
+  "narrative": {
+    "northStar": "O Carnê da Cooperativa",
+    "overview": "A Orla Vida é um carnê de cooperativa de cidade litorânea posto para funcionar na tela. Seguro de vida é papel (cotação, proposta, apólice, carnê), e o sistema mostra esse papel vivo e legível em vez de fotos de família, escudos ou gradientes de fintech. A capa verde-mar ocupa regiões inteiras (cabeçalho, hero, chamada final, rodapé); sobre ela pousam folhas cor de areia escritas em tinta azul-petróleo, com carimbos amarelo-sol, picotes tracejados e canhotos destacáveis.\n\nA densidade é a de um formulário impresso: campos rotulados em versalete condensado, valores em algarismos tabulares, fios de 1px dividindo tudo, um único grotesco variável (Archivo) que se estreita para rótulos e títulos e se abre para o texto corrido. O que muda (prêmio, parcela, total) fica marcado com marca-texto amarelo até a próxima interação. O tema escuro é o mar à noite: puxado para o verde da capa, nunca para o cinza.\n\nA identidade recusa vermelho e laranja por compromisso de marca (paleta do projeto anterior) e não usa fotos de pessoas. A única curva orgânica do sistema é a linha de costa, presente só na marca e no fio que separa a capa da areia.",
+    "keyCharacteristics": [
+      "Capa verde-mar em blocos de largura total; folhas de areia como recipiente de todo conteúdo.",
+      "Um só tipo (Archivo Variable) em três larguras: 66% para títulos e números, 78% para rótulos e botões, 100% para texto.",
+      "Algarismos tabulares em todo o corpo; valores grandes condensados e extra-negritos.",
+      "Vocabulário de papelaria: rótulo, picote, canhoto, carimbo inclinado, marca-texto.",
+      "Cantos quase retos (4px nos controles, 6px nas folhas).",
+      "Amarelo-sol é o único acento quente; erro é ameixa, nunca vermelho."
+    ],
+    "rules": [
+      {
+        "name": "The Sem Vermelho Rule",
+        "body": "Vermelho e laranja não existem neste sistema. Erro e perigo usam ameixa; alerta usa o texto, não a cor.",
+        "section": "colors"
+      },
+      {
+        "name": "The Sol É Oficial Rule",
+        "body": "Amarelo-sol marca o que vale (conversão principal, status vigente, aviso fictício, valor que mudou). Um sol por região de decisão; nunca como fundo de seção.",
+        "section": "colors"
+      },
+      {
+        "name": "The Capa Inteira Rule",
+        "body": "A capa verde ocupa regiões de borda a borda. Dentro dela, o foco vira sol (`--anel`) e os furos do picote viram verde (`--furo`); uma folha pousada na capa volta ao anel normal.",
+        "section": "colors"
+      },
+      {
+        "name": "The Três Larguras Rule",
+        "body": "Use as utilidades `condensado` (66%, com word-spacing 0.12em para devolver o espaço entre palavras) e `estreito` (78%); não invente larguras intermediárias. A exceção registrada é o carimbo (70%).",
+        "section": "typography"
+      },
+      {
+        "name": "The Rótulo Nomeia Campo Rule",
+        "body": "O rótulo em versalete sempre nomeia o valor ou o campo logo abaixo (como num formulário impresso). Nunca é sobretítulo decorativo acima de um título de seção.",
+        "section": "typography"
+      },
+      {
+        "name": "The Papel Apoiado Rule",
+        "body": "Sombra é só a da folha. Cartões, linhas de lista e campos ficam planos e se separam por fio, tracejado ou tom.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do pôr todo conteúdo em folhas de papel (`folha`, 6px, Sombra da Folha) e separar o que há dentro com fios de 1px e tracejados.",
+      "Do usar a capa verde em regiões de borda a borda e aplicar `.na-capa` nelas, para que foco e picote mudem de cor.",
+      "Do rotular cada valor com o rótulo em versalete estreito (0.72rem, 650, 0.09em) e escrever números em algarismos tabulares.",
+      "Do destacar com marca-texto amarelo o valor que acabou de mudar, e animar troca de status só com o \"bater\" do carimbo.",
+      "Do desligar `bater` e `surgir` (e qualquer pulso de carregamento) sob `prefers-reduced-motion`; elas só existem dentro de `no-preference`.",
+      "Do manter o aviso de projeto fictício visível em toda página e a marca \"Documento fictício\" em toda folha.",
+      "Do garantir que cada página imprima limpa: A4, tinta escura, sem navegação."
+    ],
+    "donts": [
+      "Don't usar vermelho ou laranja, nem para erro; erro é ameixa.",
+      "Don't usar fotos de pessoas.",
+      "Don't usar gradientes de fintech nem fundos decorativos; o único gradiente é funcional (picote, marca-texto, trilho da régua).",
+      "Don't introduzir uma segunda família tipográfica ou larguras de Archivo fora de 66%, 70% (carimbo) e 78%.",
+      "Don't arredondar além de 6px, exceto o trilho e o polegar da régua.",
+      "Don't adicionar sombras além da da folha, do relevo do botão sol e do polegar da régua.",
+      "Don't usar o rótulo em versalete como sobretítulo acima de títulos de seção.",
+      "Don't escurecer o tema escuro para cinza neutro; o fundo noturno puxa para o verde da capa."
+    ]
+  }
+}

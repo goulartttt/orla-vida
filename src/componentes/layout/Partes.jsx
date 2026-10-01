@@ -10,7 +10,7 @@ export function AlternarTema({ className = '' }) {
     <button
       type="button"
       onClick={alternar}
-      className={`inline-flex size-11 items-center justify-center rounded-[4px] transition-colors hover:bg-black/10 ${className}`}
+      className={`inline-flex size-11 items-center justify-center rounded-[4px] transition-colors hover:bg-capa-funda ${className}`}
       aria-label={escuro ? 'Usar tema claro' : 'Usar tema escuro'}
       title={escuro ? 'Tema claro' : 'Tema escuro'}
     >

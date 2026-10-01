@@ -25,7 +25,7 @@ export function CabecalhoPublico() {
             Dúvidas
           </a>
         </nav>
-        <AlternarTema className="hover:bg-capa-funda!" />
+        <AlternarTema />
         {usuario ? (
           <Link
             to="/painel"
