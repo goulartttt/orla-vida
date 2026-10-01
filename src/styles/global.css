@@ -1,0 +1,396 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/archivo/wdth.css';
+
+@custom-variant dark (&:where([data-tema='escuro'], [data-tema='escuro'] *));
+
+/* ------------------------------------------------------------------
+   Tokens. O mundo é um carnê de cooperativa de cidade litorânea:
+   capa verde-mar, folhas cor de areia, tinta azul-petróleo,
+   carimbos amarelo-sol. Vermelho e laranja ficam de fora de propósito.
+   ------------------------------------------------------------------ */
+:root {
+  --fundo: oklch(0.955 0.019 86);
+  --folha: oklch(0.988 0.009 90);
+  --folha-funda: oklch(0.935 0.02 88);
+  --tinta: oklch(0.27 0.045 228);
+  --tinta-suave: oklch(0.44 0.04 222);
+  --fio: oklch(0.83 0.025 205);
+  --fio-forte: oklch(0.62 0.03 215);
+
+  --capa: oklch(0.4 0.072 176);
+  --capa-funda: oklch(0.33 0.06 182);
+  --capa-tinta: oklch(0.965 0.02 92);
+  --capa-suave: oklch(0.87 0.035 150);
+  --capa-fio: oklch(0.55 0.06 172);
+
+  --mar: oklch(0.42 0.08 174);
+  --mar-forte: oklch(0.35 0.07 178);
+  --petroleo: oklch(0.38 0.06 228);
+  --sol: oklch(0.86 0.15 92);
+  --sol-forte: oklch(0.8 0.16 88);
+  --sol-tinta: oklch(0.25 0.045 228);
+  --ameixa: oklch(0.46 0.15 345);
+  --marca: oklch(0.91 0.13 96);
+  --anel: var(--mar-forte);
+
+  --sombra-folha: 0 1px 0 oklch(0.27 0.045 228 / 0.06), 0 18px 34px -22px oklch(0.27 0.045 228 / 0.45);
+  color-scheme: light;
+}
+
+[data-tema='escuro'] {
+  --fundo: oklch(0.2 0.024 222);
+  --folha: oklch(0.245 0.028 222);
+  --folha-funda: oklch(0.225 0.026 222);
+  --tinta: oklch(0.94 0.018 90);
+  --tinta-suave: oklch(0.78 0.025 205);
+  --fio: oklch(0.36 0.03 215);
+  --fio-forte: oklch(0.52 0.035 210);
+
+  --capa: oklch(0.31 0.052 180);
+  --capa-funda: oklch(0.26 0.042 185);
+  --capa-tinta: oklch(0.96 0.02 92);
+  --capa-suave: oklch(0.84 0.04 150);
+  --capa-fio: oklch(0.45 0.05 175);
+
+  --mar: oklch(0.79 0.1 172);
+  --mar-forte: oklch(0.85 0.09 170);
+  --petroleo: oklch(0.8 0.06 222);
+  --sol: oklch(0.86 0.15 92);
+  --sol-forte: oklch(0.9 0.14 95);
+  --sol-tinta: oklch(0.22 0.04 228);
+  --ameixa: oklch(0.8 0.11 345);
+  --marca: oklch(0.86 0.14 94 / 0.32);
+  --anel: var(--sol);
+
+  --sombra-folha: 0 1px 0 oklch(0 0 0 / 0.3), 0 20px 40px -24px oklch(0 0 0 / 0.8);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --font-sans: 'Archivo Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --color-fundo: var(--fundo);
+  --color-folha: var(--folha);
+  --color-folha-funda: var(--folha-funda);
+  --color-tinta: var(--tinta);
+  --color-tinta-suave: var(--tinta-suave);
+  --color-fio: var(--fio);
+  --color-fio-forte: var(--fio-forte);
+  --color-capa: var(--capa);
+  --color-capa-funda: var(--capa-funda);
+  --color-capa-tinta: var(--capa-tinta);
+  --color-capa-suave: var(--capa-suave);
+  --color-capa-fio: var(--capa-fio);
+  --color-mar: var(--mar);
+  --color-mar-forte: var(--mar-forte);
+  --color-petroleo: var(--petroleo);
+  --color-sol: var(--sol);
+  --color-sol-forte: var(--sol-forte);
+  --color-sol-tinta: var(--sol-tinta);
+  --color-ameixa: var(--ameixa);
+  --color-marca: var(--marca);
+
+  --ease-saida: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Largura da Archivo: condensada para rótulos e títulos de documento. */
+@utility estreito {
+  font-stretch: 78%;
+}
+@utility condensado {
+  font-stretch: 66%;
+}
+
+@layer base {
+  html {
+    background: var(--fundo);
+    color: var(--tinta);
+    -webkit-text-size-adjust: 100%;
+    scrollbar-color: var(--fio-forte) transparent;
+  }
+
+  body {
+    min-height: 100dvh;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.55;
+    font-variant-numeric: tabular-nums;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    line-height: 1.05;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--sol);
+    color: var(--sol-tinta);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--anel);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* Títulos recebem foco por código ao trocar de página (para leitores de tela); sem anel. */
+  [tabindex='-1']:focus {
+    outline: none;
+  }
+
+  a {
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 1px;
+  }
+
+  input,
+  select,
+  textarea {
+    caret-color: var(--mar);
+  }
+
+  /* Sobre a capa verde, o anel de foco vira amarelo-sol para manter contraste. */
+  .na-capa {
+    --anel: var(--sol);
+  }
+}
+
+@layer components {
+  .folha {
+    background: var(--folha);
+    border: 1px solid var(--fio);
+    border-radius: 6px;
+    box-shadow: var(--sombra-folha);
+  }
+
+  .rotulo {
+    font-stretch: 78%;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--tinta-suave);
+  }
+
+  /* Picote: furos e tracejado, como a linha de destacar um canhoto. */
+  .picote {
+    position: relative;
+    height: 14px;
+    background:
+      radial-gradient(circle at 7px 7px, var(--fundo) 3.5px, transparent 4px) 0 0 / 14px 14px repeat-x,
+      linear-gradient(to right, var(--fio-forte) 50%, transparent 0) 0 50% / 10px 1px repeat-x;
+  }
+
+  .entrada {
+    width: 100%;
+    min-height: 2.875rem;
+    padding: 0.625rem 0.75rem;
+    background: var(--folha);
+    color: var(--tinta);
+    border: 1px solid var(--fio);
+    border-bottom: 2px solid var(--fio-forte);
+    border-radius: 4px 4px 2px 2px;
+    transition:
+      border-color 160ms var(--ease-saida),
+      background-color 160ms var(--ease-saida);
+  }
+  .entrada::placeholder {
+    color: var(--tinta-suave);
+    opacity: 0.85;
+  }
+  .entrada:hover {
+    border-bottom-color: var(--tinta-suave);
+  }
+  .entrada:focus-visible {
+    outline: none;
+    border-color: var(--mar);
+    border-bottom-color: var(--mar);
+    box-shadow: 0 0 0 3px color-mix(in oklch, var(--mar) 25%, transparent);
+  }
+  .entrada[aria-invalid='true'] {
+    border-bottom-color: var(--ameixa);
+  }
+  .entrada:disabled,
+  .entrada[readonly] {
+    background: var(--folha-funda);
+    color: var(--tinta-suave);
+  }
+
+  /* Marca-texto: o que acabou de mudar fica destacado até a próxima interação. */
+  .marcado {
+    background: linear-gradient(transparent 12%, var(--marca) 12%, var(--marca) 92%, transparent 92%);
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    border-radius: 2px;
+  }
+
+  .carimbo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    padding: 0.2em 0.6em 0.15em;
+    border: 2px solid currentColor;
+    outline: 1px solid currentColor;
+    outline-offset: 2px;
+    border-radius: 4px;
+    font-stretch: 70%;
+    font-weight: 800;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    line-height: 1.2;
+    rotate: -3deg;
+    filter: url(#tinta-carimbo);
+  }
+
+  /* Controle deslizante: o "sol" corre sobre uma faixa que se preenche de verde-mar. */
+  .regua {
+    --preenchido: 50%;
+    width: 100%;
+    height: 2.75rem;
+    background: transparent;
+    appearance: none;
+    cursor: pointer;
+  }
+  .regua::-webkit-slider-runnable-track {
+    height: 8px;
+    border-radius: 999px;
+    background: linear-gradient(to right, var(--mar) var(--preenchido), var(--fio) var(--preenchido));
+  }
+  .regua::-moz-range-track {
+    height: 8px;
+    border-radius: 999px;
+    background: var(--fio);
+  }
+  .regua::-moz-range-progress {
+    height: 8px;
+    border-radius: 999px;
+    background: var(--mar);
+  }
+  .regua::-webkit-slider-thumb {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    margin-top: -11px;
+    border-radius: 50%;
+    background: var(--sol);
+    border: 3px solid var(--folha);
+    box-shadow:
+      0 0 0 2px var(--mar),
+      0 6px 14px -6px oklch(0.25 0.045 228 / 0.7);
+    transition: scale 150ms var(--ease-saida);
+  }
+  .regua::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--sol);
+    border: 3px solid var(--folha);
+    box-shadow: 0 0 0 2px var(--mar);
+  }
+  .regua:active::-webkit-slider-thumb {
+    scale: 1.12;
+  }
+  .regua:focus-visible {
+    outline: none;
+  }
+  .regua:focus-visible::-webkit-slider-thumb {
+    box-shadow:
+      0 0 0 2px var(--mar),
+      0 0 0 6px var(--anel);
+  }
+  .regua:focus-visible::-moz-range-thumb {
+    box-shadow:
+      0 0 0 2px var(--mar),
+      0 0 0 6px var(--anel);
+  }
+
+  .faixa-marcada {
+    background: repeating-linear-gradient(
+      -45deg,
+      color-mix(in oklch, var(--tinta) 88%, transparent) 0 6px,
+      color-mix(in oklch, var(--tinta) 78%, transparent) 6px 12px
+    );
+    color: transparent;
+    border-radius: 2px;
+    user-select: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .bater {
+    animation: bater 520ms var(--ease-saida) both;
+  }
+  .surgir {
+    animation: surgir 600ms var(--ease-saida) both;
+  }
+}
+
+@keyframes bater {
+  0% {
+    transform: scale(1.5) rotate(6deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(0.96) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes surgir {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Impressão da apólice: só o documento, tinta escura, sem navegação. */
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+  :root,
+  [data-tema='escuro'] {
+    --fundo: #fff;
+    --folha: #fff;
+    --folha-funda: #f4f4f2;
+    --tinta: #11202a;
+    --tinta-suave: #3c4b55;
+    --fio: #b9c2c6;
+    --fio-forte: #7b878d;
+    --mar: #1e5a52;
+    --petroleo: #1d3f55;
+    --sombra-folha: none;
+    color-scheme: light;
+  }
+  html,
+  body {
+    background: #fff !important;
+  }
+  .nao-imprimir {
+    display: none !important;
+  }
+  .folha {
+    border: 0;
+    box-shadow: none;
+  }
+  .carimbo {
+    filter: none;
+  }
+}

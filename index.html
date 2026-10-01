@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orla Vida · seguro de vida montado por você (projeto fictício)</title>
+    <meta
+      name="description"
+      content="Orla Vida é uma seguradora de vida fictícia, criada como projeto de portfólio. Simule, monte e contrate um seguro de exemplo do início ao fim."
+    />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#1f5c55" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      (function () {
+        var tema;
+        try {
+          tema = localStorage.getItem('orla-tema');
+        } catch (e) {}
+        if (tema !== 'claro' && tema !== 'escuro') {
+          tema = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro';
+        }
+        document.documentElement.dataset.tema = tema;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
