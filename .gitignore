@@ -1,0 +1,29 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+node_modules
+dist
+*.local
+.vercel
+
+# Segredos: nunca versionar
+.env
+.env.*
+!.env.example
+
+# Testes ponta a ponta
+test-results
+playwright-report
+
+# Capturas e rascunhos de revisão de design (o contrato em .impeccable/surfaces é versionado)
+.impeccable/review
+.impeccable/mocks
+.impeccable/build
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
