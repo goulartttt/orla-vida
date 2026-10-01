@@ -32,7 +32,7 @@ describe('ApoliceViva', () => {
   it('troca entre parcelado e à vista e re-picota o carnê', () => {
     render(<ApoliceViva catalogo={catalogo} />);
     const carne = screen.getByRole('list', { name: /Carnê com 12 parcelas/ });
-    expect(within(carne).getAllByRole('listitem')).toHaveLength(6); // 5 canhotos + "+ 7 parcelas"
+    expect(within(carne).getAllByRole('listitem')).toHaveLength(4); // 3 canhotos + "+ 9 parcelas"
 
     for (let i = 0; i < 11; i++) fireEvent.click(screen.getByRole('button', { name: 'Menos parcelas' }));
     expect(screen.getByText('À vista (−5%)')).toBeInTheDocument();

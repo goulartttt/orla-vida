@@ -1,28 +1,29 @@
 const TONS = {
-  mar: 'text-mar',
-  petroleo: 'text-petroleo',
-  sol: 'text-tinta bg-sol/70',
-  apagado: 'text-tinta-suave opacity-80',
+  // Carimbo cheio: amarelo-sol com tinta escura (contratada, vigente).
+  sol: 'bg-sol text-sol-tinta',
+  // Carimbo leve: só um véu de amarelo (em aberto, começa em breve, obrigatória).
+  'sol-claro': 'bg-sol/30 text-tinta',
+  // Encerrado: sem cor, como um carimbo antigo.
+  apagado: 'text-tinta-suave',
   // Sobre a capa verde: tinta amarelo-sol, sem preenchimento.
   capa: 'text-sol',
 };
 
-/** Carimbo de status, como os de borracha usados em documentos. */
-export function Carimbo({ tom = 'mar', bater = false, className = '', children }) {
-  return <span className={`carimbo ${TONS[tom]} ${bater ? 'bater' : ''} ${className}`}>{children}</span>;
+/** Inclinação estável derivada do texto: cada carimbo "bate" num ângulo próprio. */
+function inclinacao(texto) {
+  let soma = 0;
+  for (const letra of String(texto)) soma = (soma * 31 + letra.charCodeAt(0)) % 997;
+  return `${(soma % 7) - 4}deg`;
 }
 
-/**
- * Filtro SVG que dá ao carimbo uma borda levemente irregular, como tinta de borracha.
- * Montado uma única vez na raiz do app.
- */
-export function FiltroCarimbo() {
+/** Carimbo de status, como os de borracha usados em documentos. */
+export function Carimbo({ tom = 'sol', bater = false, className = '', style, children }) {
   return (
-    <svg width="0" height="0" className="absolute" aria-hidden focusable="false">
-      <filter id="tinta-carimbo" x="-5%" y="-20%" width="110%" height="140%">
-        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="ruido" />
-        <feDisplacementMap in="SourceGraphic" in2="ruido" scale="1.4" />
-      </filter>
-    </svg>
+    <span
+      className={`carimbo ${TONS[tom]} ${bater ? 'bater' : ''} ${className}`}
+      style={{ '--inclinacao': inclinacao(children), ...style }}
+    >
+      {children}
+    </span>
   );
 }

@@ -83,10 +83,16 @@ const PASSOS = [
     titulo: 'Cotação',
     texto: 'Você escolhe as coberturas e quanto cada uma paga. A cotação fica salva e pode ser editada quantas vezes quiser.',
     detalhe: (
-      <div className="flex flex-col gap-2">
-        <div className="h-2.5 w-3/4 rounded-full bg-fio" />
-        <div className="h-2.5 w-1/2 rounded-full bg-fio" />
-        <Carimbo tom="petroleo" className="mt-2 self-start">
+      <div className="flex flex-col gap-1 text-sm">
+        <p className="flex justify-between gap-3 border-b border-fio pb-1">
+          <span>Morte por qualquer causa</span>
+          <span className="font-semibold">R$ 300.000</span>
+        </p>
+        <p className="flex justify-between gap-3 border-b border-fio pb-1">
+          <span>Assistência funeral</span>
+          <span className="font-semibold">R$ 10.000</span>
+        </p>
+        <Carimbo tom="sol-claro" className="mt-3 self-start">
           Em aberto
         </Carimbo>
       </div>
@@ -110,7 +116,7 @@ const PASSOS = [
     detalhe: (
       <div className="flex flex-wrap items-center gap-3">
         <span className="estreito text-sm font-semibold">ORL-2026-10-000001</span>
-        <Carimbo tom="mar">Vigente</Carimbo>
+        <Carimbo tom="sol">Vigente</Carimbo>
       </div>
     ),
   },
@@ -207,7 +213,7 @@ function Coberturas() {
                       <span className="flex flex-wrap items-center gap-2 text-lg font-semibold">
                         {c.nome}
                         {c.obrigatoria && (
-                          <Carimbo tom="mar" className="rotate-0! text-[0.65rem]!">
+                          <Carimbo tom="sol-claro" className="rotate-0! text-[0.65rem]!">
                             Obrigatória
                           </Carimbo>
                         )}
@@ -268,9 +274,9 @@ function SeusDados() {
           <h2 className="condensado max-w-[16ch] text-[clamp(2.2rem,5vw,3.6rem)] leading-[0.95] font-extrabold">
             Seus dados, guardados como deveriam.
           </h2>
-          <ul className="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2">
+          <ul className="mt-10 grid gap-x-10 gap-y-6 sm:grid-cols-2">
             {CUIDADOS.map(({ icone: Icone, titulo, texto }) => (
-              <li key={titulo} className="flex gap-4">
+              <li key={titulo} className="flex gap-4 border-t border-fio pt-5">
                 <Icone className="mt-1 size-6 shrink-0 text-mar" aria-hidden strokeWidth={1.8} />
                 <div>
                   <h3 className="text-lg font-semibold">{titulo}</h3>
@@ -289,11 +295,10 @@ function SeusDados() {
             </div>
             <div>
               <dt className="rotulo">Como fica no banco de dados</dt>
-              <dd className="mt-2 flex flex-col gap-1.5" aria-label="Texto cifrado, ilegível">
-                <span className="faixa-marcada block h-3.5 w-full" />
-                <span className="faixa-marcada block h-3.5 w-11/12" />
-                <span className="faixa-marcada block h-3.5 w-2/3" />
+              <dd className="mt-2 rounded-[4px] border border-dashed border-fio-forte bg-folha-funda px-3 py-2.5 text-sm leading-relaxed break-all text-tinta-suave">
+                v1:qT7mB0xW2fLk9aZr:Hn4cVd8sPe1uQo6yRt3iXg==:Jw5pKz0lMa2N
               </dd>
+              <p className="mt-1.5 text-xs text-tinta-suave">Ilustração do formato. Cada gravação gera um código diferente.</p>
             </div>
             <p className="border-t border-dashed border-fio-forte pt-4 text-sm text-tinta-suave">
               CPF de teste, gerado por algoritmo. Não pertence a ninguém.

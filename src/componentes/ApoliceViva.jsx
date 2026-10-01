@@ -181,7 +181,7 @@ export function ApoliceViva({ catalogo }) {
             </button>
           </div>
         </div>
-        <Canhotos canhotos={canhotos} limite={5} marcado={marcados.has('parcela')} />
+        <Canhotos canhotos={canhotos} limite={3} fileira marcado={marcados.has('parcela')} />
         <p className="sr-only" aria-live="polite">
           {anuncio}
         </p>

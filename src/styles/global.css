@@ -31,16 +31,19 @@
   --sol-tinta: oklch(0.25 0.045 228);
   --ameixa: oklch(0.46 0.15 345);
   --marca: oklch(0.91 0.13 96);
-  --anel: var(--mar-forte);
+  --anel-base: var(--mar-forte);
+  --anel: var(--anel-base);
+  --furo: var(--fundo);
 
   --sombra-folha: 0 1px 0 oklch(0.27 0.045 228 / 0.06), 0 18px 34px -22px oklch(0.27 0.045 228 / 0.45);
   color-scheme: light;
 }
 
 [data-tema='escuro'] {
-  --fundo: oklch(0.2 0.024 222);
-  --folha: oklch(0.245 0.028 222);
-  --folha-funda: oklch(0.225 0.026 222);
+  /* O fundo escuro é o mar à noite: puxado para o verde da capa, não para o cinza. */
+  --fundo: oklch(0.2 0.026 198);
+  --folha: oklch(0.245 0.03 196);
+  --folha-funda: oklch(0.225 0.028 197);
   --tinta: oklch(0.94 0.018 90);
   --tinta-suave: oklch(0.78 0.025 205);
   --fio: oklch(0.36 0.03 215);
@@ -60,7 +63,8 @@
   --sol-tinta: oklch(0.22 0.04 228);
   --ameixa: oklch(0.8 0.11 345);
   --marca: oklch(0.86 0.14 94 / 0.32);
-  --anel: var(--sol);
+  --anel-base: var(--sol);
+  --anel: var(--anel-base);
 
   --sombra-folha: 0 1px 0 oklch(0 0 0 / 0.3), 0 20px 40px -24px oklch(0 0 0 / 0.8);
   color-scheme: dark;
@@ -99,6 +103,8 @@
 }
 @utility condensado {
   font-stretch: 66%;
+  /* Na largura condensada o espaço entre palavras encolhe demais; devolvemos um pouco. */
+  word-spacing: 0.12em;
 }
 
 @layer base {
@@ -157,9 +163,14 @@
     caret-color: var(--mar);
   }
 
-  /* Sobre a capa verde, o anel de foco vira amarelo-sol para manter contraste. */
+  /* Sobre a capa verde, o anel de foco vira amarelo-sol e os furos do picote mostram o verde.
+     Uma folha apoiada na capa volta a usar o anel normal, que contrasta com o papel. */
   .na-capa {
     --anel: var(--sol);
+    --furo: var(--capa);
+  }
+  .na-capa .folha {
+    --anel: var(--anel-base);
   }
 }
 
@@ -185,7 +196,7 @@
     position: relative;
     height: 14px;
     background:
-      radial-gradient(circle at 7px 7px, var(--fundo) 3.5px, transparent 4px) 0 0 / 14px 14px repeat-x,
+      radial-gradient(circle at 7px 7px, var(--furo) 3.5px, transparent 4px) 0 0 / 14px 14px repeat-x,
       linear-gradient(to right, var(--fio-forte) 50%, transparent 0) 0 50% / 10px 1px repeat-x;
   }
 
@@ -247,8 +258,7 @@
     letter-spacing: 0.12em;
     text-transform: uppercase;
     line-height: 1.2;
-    rotate: -3deg;
-    filter: url(#tinta-carimbo);
+    rotate: var(--inclinacao, -2deg);
   }
 
   /* Controle deslizante: o "sol" corre sobre uma faixa que se preenche de verde-mar. */
@@ -313,16 +323,6 @@
       0 0 0 6px var(--anel);
   }
 
-  .faixa-marcada {
-    background: repeating-linear-gradient(
-      -45deg,
-      color-mix(in oklch, var(--tinta) 88%, transparent) 0 6px,
-      color-mix(in oklch, var(--tinta) 78%, transparent) 6px 12px
-    );
-    color: transparent;
-    border-radius: 2px;
-    user-select: none;
-  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -389,8 +389,5 @@
   .folha {
     border: 0;
     box-shadow: none;
-  }
-  .carimbo {
-    filter: none;
   }
 }

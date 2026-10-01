@@ -4,7 +4,6 @@ import { Toaster } from 'sonner';
 import { LayoutApp } from './componentes/layout/LayoutApp.jsx';
 import { LayoutPublico } from './componentes/layout/LayoutPublico.jsx';
 import { RotaProtegida, RotaVisitante } from './componentes/Rotas.jsx';
-import { FiltroCarimbo } from './componentes/ui/Carimbo.jsx';
 import { ProvedorSessao } from './contexto/Sessao.jsx';
 import { Home } from './pages/Home.jsx';
 import { NaoEncontrada } from './pages/NaoEncontrada.jsx';
@@ -48,7 +47,6 @@ export function App() {
   return (
     <BrowserRouter>
       <ProvedorSessao>
-        <FiltroCarimbo />
         <GerenciarNavegacao />
         <Toaster
           position="bottom-right"

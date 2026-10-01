@@ -10,11 +10,16 @@ export function NaoEncontrada() {
 
   return (
     <div className="mx-auto max-w-2xl px-5 py-16 sm:py-24">
-      <Folha tipo="Protocolo" numero="404">
-        <div className="flex flex-col items-start gap-5 p-7 sm:p-10">
-          <Carimbo tom="petroleo" bater className="text-base!">
+      <Folha
+        tipo="Protocolo"
+        numero="404"
+        acoes={
+          <Carimbo tom="sol" bater>
             Extraviado
           </Carimbo>
+        }
+      >
+        <div className="flex flex-col items-start gap-5 p-7 sm:p-10">
           <h1 className="condensado text-5xl leading-[0.95] font-extrabold">Esta página não está no arquivo.</h1>
           <p className="max-w-[48ch] text-lg text-tinta-suave">
             O endereço pode ter sido digitado errado, ou o documento foi removido. Volte para um lugar conhecido:

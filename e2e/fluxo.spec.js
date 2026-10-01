@@ -13,7 +13,8 @@ test('visitante faz o caminho inteiro com a conta demo', async ({ page }, info) 
 
   // A Apólice Viva recalcula ao mexer no capital.
   await page.getByLabel('Quanto sua família recebe').fill('500000');
-  await expect(page.getByText('R$ 500.000', { exact: true })).toBeVisible();
+  const simulacao = page.getByRole('region', { name: 'Simulação de seguro de vida' });
+  await expect(simulacao.getByText('R$ 500.000', { exact: true })).toBeVisible();
   await capturar(page, info, 'home');
 
   await page.getByRole('button', { name: 'Entrar com conta demo' }).first().click();
@@ -59,7 +60,8 @@ test('tema escuro e página não encontrada', async ({ page }, info) => {
   await page.addInitScript(() => localStorage.setItem('orla-tema', 'escuro'));
   await page.goto('/');
   await expect(page.locator('html')).toHaveAttribute('data-tema', 'escuro');
-  await expect(page.getByText('R$ 300.000', { exact: true })).toBeVisible();
+  const simulacao = page.getByRole('region', { name: 'Simulação de seguro de vida' });
+  await expect(simulacao.getByText('R$ 300.000', { exact: true })).toBeVisible();
   await capturar(page, info, 'home-escuro');
 
   await page.goto('/endereco-que-nao-existe');

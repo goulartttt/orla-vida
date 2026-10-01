@@ -8,13 +8,13 @@ export const PARENTESCOS = {
 };
 
 export const STATUS_COTACAO = {
-  aberta: { texto: 'Em aberto', tom: 'petroleo' },
-  efetivada: { texto: 'Contratada', tom: 'mar' },
+  aberta: { texto: 'Em aberto', tom: 'sol-claro' },
+  efetivada: { texto: 'Contratada', tom: 'sol' },
 };
 
 export const SITUACAO_APOLICE = {
-  vigente: { texto: 'Vigente', tom: 'mar' },
-  agendada: { texto: 'Começa em breve', tom: 'sol' },
+  vigente: { texto: 'Vigente', tom: 'sol' },
+  agendada: { texto: 'Começa em breve', tom: 'sol-claro' },
   encerrada: { texto: 'Encerrada', tom: 'apagado' },
 };
 
